@@ -1,0 +1,100 @@
+/* Hero.css */
+.hero {
+  width: 100%;
+  min-height: 90vh;
+  background: linear-gradient(
+    180deg,
+    #fde1ff 0%,
+    #e1ffea22 60%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5%;
+  box-sizing: border-box;
+}
+
+.hero-left {
+  flex: 1;
+  max-width: 50%;
+}
+
+/* small uppercase subtitle */
+.hero-left h2 {
+  margin: 0 0 1rem;
+  font-size: 1rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #171717;
+}
+
+/* wrapper for the three big lines */
+.hero-left > div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1em;
+  margin-bottom: 2rem;
+}
+
+/* big, bold lines all the same */
+.hero-left > div p,
+.hero-hand-icon p {
+  margin: 0;
+  font-size: 6rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+/* “new 👋” row */
+.hero-hand-icon {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.hero-hand-icon img {
+  width: 3rem;
+  height: auto;
+}
+
+/* button that hugs content */
+.hero-latest-btn {
+  display: inline-flex;       /* stay as a row */
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;                /* space between text and arrow */
+  white-space: nowrap;        /* no wrapping */
+  padding: 1rem 2.5rem;       /* boost horiz padding */
+  background-color: #ff3b3b;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  /* remove any width: auto/block rules you added before */
+}
+
+
+.hero-latest-btn img {
+  width: 1.5rem;
+  margin-left: 0.5rem;
+}
+
+.hero-latest-btn:hover {
+  background-color: #e12a2a;
+}
+
+.hero-right {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.hero-right img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
